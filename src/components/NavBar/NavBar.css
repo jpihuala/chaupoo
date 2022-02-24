@@ -1,11 +1,8 @@
 ul {
-    background-color: #0f4e0f;
+    background-color: #6c916c;
     list-style: none;
     margin: 0;
     padding: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
 }
 
 ul li {
