@@ -1,6 +1,9 @@
 import './App.css';
-import ComponenteClase from './components/ComponenteClase';
+import CartWidget from './components/CartWidget.jsx/CartWidget';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+
 import { NavBar } from './components/NavBar/NavBar'
+import TituloApp from './components/TituloApp/TituloApp';
 
 function App() {
 
@@ -11,7 +14,9 @@ function App() {
     <div>
 
       <NavBar />
-      <ComponenteClase/>
+
+      <ItemListContainer saludo='Hola soy componente contenedor' />
+
     </div>
   );
 }
