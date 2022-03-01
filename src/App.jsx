@@ -20,7 +20,7 @@ function App() {
       {/* <ItemListContainer saludo='Hola soy componente contenedor' />
       <Div/> */}
 
-      <ItemCount />
+      <ItemCount/>
     </div>
   );
 }
