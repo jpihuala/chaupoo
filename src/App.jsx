@@ -2,10 +2,11 @@ import './App.css';
 import CartWidget from './components/CartWidget.jsx/CartWidget';
 import Div from './components/Div.jsx';
 import ItemCount from './components/ItemCount/ItemCount';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+
 
 import { NavBar } from './components/NavBar/NavBar'
 import TituloApp from './components/TituloApp/TituloApp';
+import ItemListContainer from './containers/ItemListContainer/ItemListContainer';
 
 function App() {
 
@@ -17,10 +18,10 @@ function App() {
 
       {/* <NavBar /> */}
 
-      {/* <ItemListContainer saludo='Hola soy componente contenedor' />
-      <Div/> */}
+      <ItemListContainer/>
 
       <ItemCount initial={1} stock={10} onAdd />
+      
     </div>
   );
 }
