@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import alpha from '../../Img/alpha.jpeg'
+import ItemCount from '../ItemCount/ItemCount'
 
 function Item({prod}) {
   return (
@@ -20,6 +21,7 @@ function Item({prod}) {
                             </Link>
                                                                                     
                     </div>
+                    <ItemCount initial={1} stock={10} />
                 </div>
             </div>
 

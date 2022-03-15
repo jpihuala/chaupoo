@@ -1,7 +1,7 @@
 
 
 export const productos = [
-    { id: '1',  foto: 'alpha',categoria: 'shampoo', name: "Alpha", price: 950 },
+    { id: '1',  foto: '/Img/alpha',categoria: 'shampoo', name: "Alpha", price: 950 },
     { id: '2',  foto: '../Img/beta.jpeg',categoria: 'shampoo', name: "Beta", price: 950 },
     { id: '3',  foto: '../Img/delta.jpeg',categoria: 'shampoo', name: "Delta", price: 950 },
     { id: '4',  foto: '../Img/gamma.jpeg',categoria: 'serum', name: "Gamma", price: 950 },
