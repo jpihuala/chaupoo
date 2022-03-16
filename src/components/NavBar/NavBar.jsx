@@ -3,22 +3,25 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import { NavLink } from 'react-router-dom'
+import caarrito from '../../img/cart.png'
+import logo from '../../img/logo chaupoo.png'
+import './NavBar.css'
 
 const NavBar= () => {
     return(
         <Container>
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
                 <Container>
-                <NavLink to="/" >
-                    <img src="https://chaupoo.com.ar/wp-content/uploads/2020/05/Logo-chaupoo-webpng-300x200.png" className='w-20'  alt="" />
+                <NavLink to="/"  >
+                    <img src={logo} className='logo mx-auto'   alt="" />
                     </NavLink>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <NavLink to='categoria/shampoo'>Shampoo </NavLink>
-                        <NavLink to='categoria/serum'>Serum </NavLink>
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                        <NavLink to='categoria/shampoo' className= 'datos' >Shampoo </NavLink>
+                        <NavLink to='categoria/serum' className= 'datos'>Serum </NavLink>
+                        <NavDropdown className= 'datos' title="Dropdown" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -27,8 +30,8 @@ const NavBar= () => {
                         </NavDropdown>
                     </Nav>
                     <Nav>
-                        <NavLink to="/Cart">
-                            Carrito
+                        <NavLink to="/Cart" >
+                            <img className='carrito' src={caarrito} alt="" />
                         </NavLink>
                     </Nav>
                 </Navbar.Collapse>

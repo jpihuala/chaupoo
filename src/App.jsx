@@ -20,7 +20,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Container>∑
+    <Container>
       <div>
         <NavBar/>
         <Routes>
