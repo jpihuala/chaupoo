@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import alpha from '../../Img/alpha.jpeg'
 import ItemCount from '../ItemCount/ItemCount'
 
 function Item({prod}) {
@@ -22,6 +21,7 @@ function Item({prod}) {
                                                                                     
                     </div>
                     <ItemCount initial={1} stock={10} />
+                        <img src="https://drive.google.com/file/d/1oBaOm9lT2jWhRA1AvbLxrJKDoYreU8J3/view?usp=sharing" alt="" />
                 </div>
             </div>
 
