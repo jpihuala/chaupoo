@@ -21,7 +21,7 @@ function Item({prod}) {
                                                                                     
                     </div>
                     <ItemCount initial={1} stock={10} />
-                        <img src="https://drive.google.com/file/d/1oBaOm9lT2jWhRA1AvbLxrJKDoYreU8J3/view?usp=sharing" alt="" />
+                       
                 </div>
             </div>
 
