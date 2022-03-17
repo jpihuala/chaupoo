@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import { NavLink } from 'react-router-dom'
-import caarrito from '../../img/cart.png'
+import carrito from '../../img/carrito1.png'
 import logo from '../../img/logo chaupoo.png'
 import './NavBar.css'
 
@@ -31,7 +31,7 @@ const NavBar= () => {
                     </Nav>
                     <Nav>
                         <NavLink to="/Cart" >
-                            <img className='carrito' src={caarrito} alt="" />
+                            <img className='carrito' src={carrito} alt="" />
                         </NavLink>
                     </Nav>
                 </Navbar.Collapse>

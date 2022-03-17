@@ -20,8 +20,8 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Container>
-      <div>
+    <Container>∑
+      <div className='elementos'>
         <NavBar/>
         <Routes>
           <Route path='/' element={<ItemListContainer/>}/>
