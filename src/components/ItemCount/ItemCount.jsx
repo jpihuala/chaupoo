@@ -24,11 +24,11 @@ function ItemCount ({initial, stock, onAdd}) {
 
   return (
     <div>
-      <button onClick={sumar}> + </button>
+      <button className="btn btn-outline-primary" onClick={sumar}> + </button>
       <label> { count } </label>
-      <button onClick= {restar}> - </button>
+      <button className="btn btn-outline-primary" onClick= {restar}> - </button>
       <br />
-      <button onClick={agregar}>Add to Cart</button>
+      <button className="btn btn-outline-primary" onClick={agregar}>Add to Cart</button>
     </div>
   )
 }
