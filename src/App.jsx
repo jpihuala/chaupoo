@@ -7,6 +7,7 @@ import ItemDetailContainer from './containers/ItemDetailContainer/ItemDetailCont
 import ItemListContainer from './containers/ItemListContainer/ItemListContainer';
 import Cart from './components/Cart/Cart';
 import Container from 'react-bootstrap/esm/Container';
+import CartContextProvider from './context/CartContext';
 
 
 
@@ -19,21 +20,23 @@ function App() {
 
 
   return (
-    <BrowserRouter>
-    <Container>∑
-      <div className='elementos'>
-        <NavBar/>
-        <Routes>
-          <Route path='/' element={<ItemListContainer/>}/>
-          <Route path='/categoria/:categoriaId' element={<ItemListContainer/>}/>
-          <Route path='/detalle/:detalleId' element={<ItemDetailContainer/>}/>
-          <Route path='/cart' element={<Cart/>}/>
-          
-        </Routes>
-          
-      </div>
-    </Container>
-    </BrowserRouter>
+      <CartContextProvider>
+      <BrowserRouter>
+        <Container>
+          <div className='elementos'>
+            <NavBar/>
+            <Routes>
+              <Route path='/' element={<ItemListContainer/>}/>
+              <Route path='/categoria/:categoriaId' element={<ItemListContainer/>}/>
+              <Route path='/detalle/:detalleId' element={<ItemDetailContainer/>}/>
+              <Route path='/cart' element={<Cart/>}/>
+              
+            </Routes>
+              
+          </div>
+        </Container>
+      </BrowserRouter>
+      </CartContextProvider>
   );
 }
 
