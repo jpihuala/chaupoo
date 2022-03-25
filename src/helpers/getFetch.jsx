@@ -21,3 +21,19 @@ const getFetch = new Promise((res, rej)=>{
   })
 
 export default getFetch
+
+
+const producto = { id: '6',  foto: 'https://chaupoo.com.ar/wp-content/uploads/2020/05/JOS_1274-scaled.jpg', categoria: 'shampoo', name: "Alpha", price: 950 }
+
+
+  export const getFetchProd = new Promise((res, rej)=>{
+    let url = 'pihuala.com.ar'
+    
+    if (url === 'pihuala.com.ar') {
+      setTimeout(() => {
+        res(producto)        
+      }, 3000);
+    }else{
+      rej('400 not found')
+    }
+  })

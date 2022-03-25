@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,8 +21,8 @@ function App() {
 
   return (
       <CartContextProvider>
-      <BrowserRouter>
-        <Container>
+        <BrowserRouter>
+          <Container>
           <div className='elementos'>
             <NavBar/>
             <Routes>
@@ -30,12 +30,12 @@ function App() {
               <Route path='/categoria/:categoriaId' element={<ItemListContainer/>}/>
               <Route path='/detalle/:detalleId' element={<ItemDetailContainer/>}/>
               <Route path='/cart' element={<Cart/>}/>
-              
+              <Route path='/*' element={ <Navigate to='/' replace /> } />
             </Routes>
               
           </div>
-        </Container>
-      </BrowserRouter>
+            </Container>
+         </BrowserRouter>
       </CartContextProvider>
   );
 }

@@ -21,7 +21,8 @@ function CartContextProvider({children}) {
         <CartContext.Provider value={{
             cartList,
             agregarCart,
-            vaciarCart
+            vaciarCart,
+            precioTotal
         }}>
             {children}
         </CartContext.Provider>
