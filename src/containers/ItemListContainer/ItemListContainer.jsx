@@ -40,7 +40,7 @@ function ItemListContainer( {greeting} )  {
   const handleAgregar=()=>{
       setProductos([
           ...productos,
-          { id: "8", name: "Gorra 7", foto: 'https://www.remerasya.com/pub/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/r/e/remera_negra_lisa.jpg', categoria: "remera" , price: 2 }
+          { id: "7", name: "Kit Total", foto: 'https://chaupoo.com.ar/wp-content/uploads/2020/06/468de20f-3370-40c7-862f-5dbfb17d4050.jpg', categoria: "kit" , price: 4000 }
       ])
   }
 

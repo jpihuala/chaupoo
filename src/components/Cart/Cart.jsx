@@ -22,7 +22,7 @@ function Cart() {
     const generarOrden= async ()=>{  
       let orden = {}      
 
-      orden.buyer = { name: 'fede', phone: '12364654', email: 'fede@example.com' }
+      orden.buyer = { name: 'Josue', phone: '2222222', email: 'josue@pihuala.com.ar' }
       orden.total = precioTotal();
 
       orden.items = cartList.map(cartItem => {
@@ -33,6 +33,9 @@ function Cart() {
           return {id, nombre, precio}   
       })
       console.log(orden)
+
+
+      
       const db = getFirestore()
       const queryCollectionSet = collection(db, 'orders')
       addDoc(queryCollection, orden)
