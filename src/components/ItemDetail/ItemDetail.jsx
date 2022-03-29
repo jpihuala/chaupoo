@@ -23,7 +23,7 @@ const ItemDetail = ({producto}) => {
         {producto.name}
         { count ? 
           <Link to='/cart'>
-            <button className="btn btn-outline-primary">Ir al Cart</button>
+            <button className="btn btn-outline-primary">Ir al Carrito</button>
             
             </Link>
         : 
