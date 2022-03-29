@@ -19,7 +19,7 @@ const ItemDetail = ({producto}) => {
     <Container>
     <div className="item-detail">
         <h2>{producto.name}</h2>
-        <img src={producto.foto} alt='' className='w-50' />
+        <img src={producto.image} alt='' className='w-50' />
         {producto.name}
         { count ? 
           <Link to='/cart'>

@@ -50,7 +50,7 @@ function Cart() {
     return (
       <div>
         cart
-        { cartList.map(item => <li key={item.id}>nombre: {item.name} precio: {item.price} cantidad:{item.cantidad}</li>) }
+        { cartList.map(item => <li key={item.id}> {item.image} nombre: {item.name} precio: {item.price} cantidad:{item.cantidad}</li>) }
         <button onClick={vaciarCart}>Vaciar Carrito</button>
         <button onClick={generarOrden}>Terminar Compra</button>
       </div>
