@@ -5,7 +5,7 @@ import ItemDetail from '../../components/ItemDetail/ItemDetail'
 import getFetch, { getFetchProd } from '../../helpers/getFetch'
 
 
-function ItemDetailContainer() {
+const ItemDetailContainer = () => {
     const [producto, setProducto] = useState({})
     const { detalleId } = useParams ()
     const [loading, setLoading] = useState(true)

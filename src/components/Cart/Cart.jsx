@@ -11,7 +11,7 @@ import {
   where, 
   writeBatch 
 } from "firebase/firestore"
-import { useCartContext } from "../../context/cartContext"
+import { useCartContext } from "../../context/CartContext"
 
 
 function Cart() {
@@ -51,7 +51,7 @@ function Cart() {
       <div>
         cart
         { cartList.map(item => <li key={item.id}>nombre: {item.name} precio: {item.price} cantidad:{item.cantidad}</li>) }
-        <button onClick={vaciarCart}>VaciarCarrto</button>
+        <button onClick={vaciarCart}>Vaciar Carrito</button>
         <button onClick={generarOrden}>Terminar Compra</button>
       </div>
     )

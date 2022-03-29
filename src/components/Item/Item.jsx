@@ -1,7 +1,5 @@
-import React from 'react'
-import Container from 'react-bootstrap/esm/Container'
 import { Link } from 'react-router-dom'
-import ItemCount from '../ItemCount/ItemCount'
+
 
 function Item({prod}) {
   return (
@@ -21,9 +19,6 @@ function Item({prod}) {
                             </Link>
                                                                                     
                     </div>
-                    <Container>
-                        <ItemCount initial={1} stock={10} />
-                    </Container>
                 </div>
             </div>
 

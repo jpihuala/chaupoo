@@ -1,15 +1,16 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import ItemCount from "../../components/ItemCount/ItemCount"
-import ItemList from '../../components/ItemList/ItemList'
+
 import  getFetch  from "../../helpers/getFetch"
 
 import { collection, doc, getDoc, getDocs, getFirestore, limit, query, where } from "firebase/firestore"
+import ItemList from "../../components/ItemList.jsx/ItemList"
 
 
 function ItemListContainer( {greeting} )  {
     const [productos, setProductos] = useState([])
-    const [producto, setProducto ] = useState({})
+
     const [loading, setLoading] = useState(true)
     const [bool, setBool] = useState(true)
     const { categoriaId } = useParams()
@@ -53,7 +54,8 @@ function ItemListContainer( {greeting} )  {
           
           {   loading ? <h1>Cargando...</h1>
               :
-              <ItemList productos= {productos} />                
+              <ItemList productos= {productos}/>
+            //   <Itemmlis productos= {productos} />                
               
           }
           {/* <ItemCount initial = {1} stock = {10} onAdd={ onAdd } /> */}
