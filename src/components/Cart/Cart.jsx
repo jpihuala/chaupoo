@@ -12,6 +12,8 @@ import {
   writeBatch 
 } from "firebase/firestore"
 import { useCartContext } from "../../context/CartContext"
+import Container from "react-bootstrap/esm/Container"
+import { Link } from "react-router-dom"
 
 
 function Cart() {
@@ -48,12 +50,19 @@ function Cart() {
 
     console.log(cartList)
     return (
-      <div>
-        cart
-        { cartList.map(item => <li key={item.id}> {item.image} nombre: {item.name} precio: {item.price} cantidad:{item.cantidad}</li>) }
-        <button onClick={vaciarCart}>Vaciar Carrito</button>
-        <button onClick={generarOrden}>Terminar Compra</button>
-      </div>
+      <Container>
+
+          <div className="card">
+            <h2>Estado de Carrito</h2>
+            <img className='w-50' />
+            { cartList.map(item => <li key={item.id}> <br/>
+            Nombre: {item.name} <br/> 
+            Precio: {item.price} <br/>
+            Cantidad:{item.cantidad}</li>) }
+            <button className="btn btn-outline-primary btn-block" onClick={vaciarCart}>Vaciar Carrito</button>
+            <button className="btn btn-outline-primary btn-block" onClick={generarOrden}>Terminar Compra</button>
+          </div>
+      </Container>
     )
 }
 

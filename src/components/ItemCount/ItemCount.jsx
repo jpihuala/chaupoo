@@ -23,12 +23,12 @@ function ItemCount ({initial, stock, onAdd}) {
   }
 
   return (
-    <div>
-      <button className="btn btn-outline-primary" onClick={sumar}> + </button>
+    <div className='card'>
+      <button className="btn btn-outline-primary card-body" onClick={sumar}> + </button>
       <label> { count } </label>
-      <button className="btn btn-outline-primary" onClick= {restar}> - </button>
+      <button className="btn btn-outline-primary card-body" onClick= {restar}> - </button>
       <br />
-      <button className="btn btn-outline-primary" onClick={agregar}>Agregar a Carrito</button>
+      <button className="btn btn-outline-primary card-body" onClick={agregar}>Agregar a Carrito</button>
     </div>
   )
 }
