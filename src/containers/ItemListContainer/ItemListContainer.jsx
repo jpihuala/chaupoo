@@ -18,15 +18,15 @@ function ItemListContainer( {greeting} )  {
     useEffect(() => {
         const db = getFirestore()
         if (categoriaId) {
-            const queryCollection = collection(db, 'items')
-            const queryFilter = query( queryCollection, where('categoria', '==', categoriaId)  )
+            const queryColection = collection(db, 'items')
+            const queryFilter = query( queryColection, where('categoria', '==', categoriaId)  )
             getDocs(queryFilter)
             .then(resp => setProductos( resp.docs.map(item => ( { id: item.id, ...item.data() } ) ) ))
             .catch(err => console.log(err))
             .finally(()=> setLoading(false)) 
         }else{
-            const queryCollection = collection(db, 'items')
-            getDocs(queryCollection)
+            const queryColection = collection(db, 'items')
+            getDocs(queryColection)
             .then(resp => setProductos( resp.docs.map(item => ( { id: item.id, ...item.data() } ) ) ))
             .catch(err => console.log(err))
             .finally(()=> setLoading(false))             
@@ -41,7 +41,7 @@ function ItemListContainer( {greeting} )  {
 const handleAgregar=()=>{
     setProductos([
     ...productos,
-    { id: "7", name: "Kit Total", foto: 'https://chaupoo.com.ar/wp-content/uploads/2020/06/468de20f-3370-40c7-862f-5dbfb17d4050.jpg', categoria: "kit" , price: 4000 }
+    { id: "7", name: "Kit Total", foto: 'https://chaupoo.com.ar/wp-content/uploads/2020/06/468de20f-3370-40c7-862f-5dbfb17d4050.jpg', categoria: "kit" , price: 1500 }
     ])
 }
 

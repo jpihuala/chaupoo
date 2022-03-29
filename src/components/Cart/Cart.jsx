@@ -37,8 +37,8 @@ function Cart() {
 
       
       const db = getFirestore()
-      const queryCollectionSet = collection(db, 'orders')
-      addDoc(queryCollection, orden)
+      const queryColection = collection(db, 'orders')
+      addDoc(queryColection, orden)
       .then(resp => console.log(resp))
       .catch(err => console.error(err))
       .finally(() => console.log('termino '))
