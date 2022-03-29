@@ -3,8 +3,8 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import { NavLink } from 'react-router-dom'
-import carrito from '../../img/carrito1.png'
-import logo from '../../img/logo chaupoo.png'
+import carrito from '../../Img/carrito1.png'
+import logo from '../../Img/logo chaupoo.png'
 import './NavBar.css'
 
 const NavBar= () => {

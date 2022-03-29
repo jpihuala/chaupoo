@@ -26,7 +26,7 @@ const ItemDetail = ({producto}) => {
             <button className="btn btn-outline-primary">Ir al Cart</button>
             
             </Link>
-         : 
+        : 
           <ItemCount initial={1} stock={10} onAdd={onAdd}/>
         }
     </div>
