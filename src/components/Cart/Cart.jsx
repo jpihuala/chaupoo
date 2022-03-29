@@ -53,14 +53,16 @@ function Cart() {
       <Container>
 
           <div className="card">
-            <h2>Estado de Carrito</h2>
-            <img className='w-50' />
-            { cartList.map(item => <li key={item.id}> <br/>
-            Nombre: {item.name} <br/> 
-            Precio: {item.price} <br/>
-            Cantidad:{item.cantidad}</li>) }
-            <button className="btn btn-outline-primary btn-block" onClick={vaciarCart}>Vaciar Carrito</button>
-            <button className="btn btn-outline-primary btn-block" onClick={generarOrden}>Terminar Compra</button>
+            <div className="row">
+              <h2>Estado de Carrito</h2>
+              <img className='w-50' />
+              { cartList.map(item => <li key={item.id}> <br/>
+              Nombre: {item.name} <br/> 
+              Precio: {item.price} <br/>
+              Cantidad:{item.cantidad}</li>) }
+              <button className="btn btn-outline-primary btn-block" onClick={vaciarCart}>Vaciar Carrito</button>
+              <button className="btn btn-outline-primary btn-block" onClick={generarOrden}>Terminar Compra</button>
+              </div>
           </div>
       </Container>
     )
